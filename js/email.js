@@ -26,7 +26,6 @@ function success(){
     //suppression du contenu des champs du formulaire
     nom.value = "";
     email.value = "";
-    telephone.value = "";
     message.value = "";
 }
 
