@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Présentation de l'application Mon Panier</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body id="home">
+    <nav class="nav" id="menu-cote">
+        <ul>
+            <li><a href="#up">Mon Panier</a></li>
+            <li><a href="#conf">Politique de confidentialité</a></li>
+            <li><a href="#contactLink">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="topnav" class="topnav">
+        <div id="contain-ico">
+            <a id="topnav_hamburger_icon">
+                <!-- <a id="topnav_hamburger_icon" href="javascript:void(0);" onclick="showResponsiveMenu()"> -->
+                <!-- Some spans to act as a hamburger -->
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <h5>Présentation de l'application Mon Panier</h5>
+        </div>
+        <nav class="nav" id="topnav_responsive_menu">
+            <ul>
+                <li><a href="#up" class="current">Mon Panier</a></li>
+                <li><a href="#conf">Politique de confidentialité</a></li>
+                <li><a href="#contactLink">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <header>
+            <div id="contain-id">
+                <div id="photo"><img src="images/monPanier.png" alt=""></div>
+                <div id="intro">
+                    <p>Site de présentation de l'application Mon Panier</p>
+                    <p class="grd-ecran">Application pour gérer vos courses, vos tickets et vos achats en toute
+                        simplicité</p>
+                </div>
+                <div id="photo"><img src="images/imgAccueil.PNG" alt=""></div>
+            </div>
+            <h1>Présentation de l'application Mon Panier</h1>
+        </header>
+        <div id="xp"></div>
+        <section class="decallage-lien" id="section">
+            <div id="gauche">
+                <h2>Les produits et magasins</h2>
+                <div class="liste h-240">
+                    <div class="date"></div>
+                    <div class="cercle">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <circle cx="8" cy="8" r="8" />
+                        </svg>
+                    </div>
+                    <div class="carte">
+                        <h3>Ajouter des produits</h3>
+                        <p>Scanner le code-barre d'un produit pour l'ajouter dans l'application, récupération
+                            automatique des données depuis Open Food Facts (base de donnée collaborative) (nécéssite une
+                            connexion internet)</p>
+                    </div>
+                </div>
+                <div class="liste h-240">
+                    <div class="date"></div>
+                    <div class="cercle">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <circle cx="8" cy="8" r="8" />
+                        </svg>
+                    </div>
+                    <div class="carte">
+                        <h3>Personnalisation du produit</h3>
+                        <p>Personnaliser votre produit, avec un nom, une catégorie, un conditionnement et une marque.
+                        </p>
+                    </div>
+                </div>
+                <div class="liste h-240">
+                    <div class="date"></div>
+                    <div class="cercle">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <circle cx="8" cy="8" r="8" />
+                        </svg>
+                    </div>
+                    <div class="carte">
+                        <h3>Produits génériques</h3>
+                        <p>Idéal pour les produits sans codes-barres ou dits poids/prix comme la viande ou les
+                            légumes... les icones vous permettent de choisir celui qui correspond le mieux.</p>
+                    </div>
+                </div>
+                <div class="liste h-300">
+                    <div class="date"></div>
+                    <div class="cercle">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <circle cx="8" cy="8" r="8" />
+                        </svg>
+                    </div>
+                    <div class="carte">
+                        <h3>Ajouter des magasins</h3>
+                        <p>Possibilité d'ajouter des magasins avec la personnalisation (nom, ville et note) que vous
+                            pourrez affecter aux tickets et voir les statistiques</p>
+                    </div>
+                </div>
+                <!-- Début ajout des produits -->
+                <div id="form"></div>
+                <h2 id="form" class="decallage-lien">Les tickets</h2>
+                <div class="liste h-300">
+                    <div class="date"></div>
+                    <div class="cercle">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <circle cx="8" cy="8" r="8" />
+                        </svg>
+                    </div>
+                    <div class="carte">
+                        <h3>Créer un ticket</h3>
+                        <p>Créer votre ticket en ajoutant des produits soit avec le code-barre, soit par choix du
+                            produit spécifique</p>
+                        <p>Choisissez le montant du produit et la quantité</p>
+                        <p>Le total du ticket est visible directement</p>
+                        <p>Choisissez votre magasin et validez le ticket dès que vous avez fini vos courses</p>
+                    </div>
+                </div>
+                <div class="liste h-300">
+                    <div class="date"></div>
+                    <div class="cercle">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <circle cx="8" cy="8" r="8" />
+                        </svg>
+                    </div>
+                    <div class="carte">
+                        <h3>Visualiser les tickets</h3>
+                        <p>Les tickets sont accessibles 30 jours en tant que validés</p>
+                        <p>Si la liste est trop longue, vous pouvez archviver volontairement un ticket et vous pouver
+                            lui redonner l'état de validé</p>
+                    </div>
+                </div>
+                <div class="liste h-300">
+                    <div class="date"></div>
+                    <div class="cercle">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <circle cx="8" cy="8" r="8" />
+                        </svg>
+                    </div>
+                    <div class="carte">
+                        <h3>Archiver des tickets</h3>
+                        <p>Les tickets sont archivés automatiquement au bout de 30 jours</p>
+                        <p>Vous avez accès au détail des produits ainsi qu'au montant total du ticket</p>
+                    </div>
+                    <!--  -->
+
+                </div>
+
+
+                <h2>Les Statistiques</h2>
+                <div class="liste h-240">
+                    <div class="date"></div>
+                    <div class="cercle">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                            <circle cx="8" cy="8" r="8" />
+                        </svg>
+                    </div>
+                    <div class="carte">
+                        <h3>Différentes statistiques</h3>
+                        <p>Informations sur les dépenses, les top produits et les tops magasins</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!-- Page de droite -->
+            <div id="droite">
+                <div class="liste">
+
+                    <div>
+                        <div class="imgAppli">
+                            <img src="images/nouveauProduit.PNG" alt="">
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="imgAppli">
+                            <img src="images/produitGenerique.png" alt="">
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="imgAppli">
+                            <img src="images/magasins.PNG" alt="">
+                        </div>
+                    </div>
+
+                    <p>&nbsp;</p>
+
+                    <div>
+                        <div class="imgAppli">
+                            <img src="images/mesTickets.PNG" alt="">
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="imgAppli">
+                            <img src="images/listeTickets.PNG" alt="">
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="imgAppli">
+                            <img src="images/lesStats.PNG" alt="">
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="imgAppli">
+                            <img src="images/statistique.PNG" alt="">
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <div id="conf"></div>
+        <section id="portofolio-section">
+            <h2>Politique de confidentialité</h2>
+            <div class="carte">
+                <p><em>Dernière mise à jour : 31 août 2026</em></p><br>
+                <p>La protection de vos données personnelles est une priorité. L'application <strong>MonPanier</strong>
+                    respecte totalement votre vie privée :</p><br>
+                <ul>
+                    <li><strong><br>Stockage local :</strong><br>
+                        Toutes vos données (tickets, produits, magasins, historiques)
+                        sont stockées exclusivement en local sur votre appareil via le framework SwiftData d'Apple.
+                        Aucune donnée n'est envoyée vers un serveur externe.</li>
+                    <li><strong><br>Absence de collecte :</strong><br>
+                        Nous ne collectons, ne vendons et ne partageons aucune
+                        donnée personnelle ni comportementale.</li>
+                    <li><strong><br>Réseau & Suivi :</strong><br>
+                        L'application ne contient aucun outil de traçage publicitaire
+                        (SDK tiers), ni aucun analyseur d'audience. Elle fonctionne parfaitement hors-ligne.</li>
+                    <li><strong><br>Appareil photo :</strong><br>
+                        L'accès à l'appareil photo est utilisé
+                        uniquement pour vous permettre de scanner le code-barres d'un produit. Aucune image
+                        n'est transmise à un tiers.</li>
+                </ul>
+                <br>
+            </div>
+        </section>
+    <div id="contactLink"></div>
+    <section id="contact">
+        <h2>CONTACT</h2>
+        <div id="result-form"></div>
+        <div class="contain-tout">
+            <div class="form-container">
+                <form method="post" id="contact-form">
+                    <div>
+                        <label for="nom">Nom : *</label>
+                        <input type="text" name="nom" id="nom" required minlength="3" maxlength="20">
+                        <span class="error"></span>
+                    </div>
+                    <div>
+                        <label for="email">Adresse email : *</label>
+                        <input type="email" name="email" id="email" minlength="6" maxlength="50">
+                        <span class="error"></span>
+                    </div>
+                    <div>
+                        <label for="telephone">Téléphone :</label>
+                        <input type="text" name="telephone" id="telephone">
+                        <span class="error"></span>
+                    </div>
+                    <div>
+                        <label for="message">Message : *</label>
+                        <textarea name="message" id="message" name="message" required minlength="10"
+                            maxlength="250"></textarea>
+                        <span class="error"></span>
+                    </div>
+                    <div>
+                        <input class="btn" id="submit" type="submit" value="Envoyer">
+                    </div>
+                </form>
+            </div>
+            <div class="form-image">
+                <img src="images/iphone.jpg" alt="image contact">
+            </div>
+        </div>
+
+    </section>
+
+    </div>
+    <footer>
+        <h4>Developpeuse Java JEE
+            <br>Delphine MAURER
+        </h4>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="js/menuBurger.js"></script>
+    <script src="js/email.js"></script>
+</body>
+
+</html>
