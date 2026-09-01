@@ -1,7 +1,6 @@
 let lemessage = document.getElementById('result-form');
 let nom = document.getElementById("nom");
 let email = document.getElementById("email");
-let telephone = document.getElementById("telephone");
 let message = document.getElementById("message");
 
 window.onload = function() {

@@ -650,12 +650,13 @@ textarea {
 
 /* Cadre pour message d'envoi */
 #result-form {
-    height: 10%;
-    width: 60%;
-    margin: 0 auto;
+    width: 80%;
+    min-height: 30px;
+    margin: 0 auto 20px auto;
+    padding: 10px;
     text-align: center;
-    padding: 30px 20px 30px 20px;
-    color: #fff;
+    color: var(--color-purple1);
+    font-size: 1rem;
 }
 
 .form-image {
@@ -1104,9 +1105,7 @@ h4 {
         display: none;
     }
 
-    #result-form {
-        display: none;
-    }
+
 
     input,
     textarea {
