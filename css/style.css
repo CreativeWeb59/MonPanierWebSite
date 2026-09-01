@@ -547,15 +547,11 @@ section #droite {
     content: '\f0e0';
 }
 
-#contact-form div:nth-child(3):before {
-    content: '\f3cd';
-}
-
-#contact-form div:nth-child(4) {
+#contact-form div:nth-child(3) {
     height: 100px;
 }
 
-#contact-form div:nth-child(4):before {
+#contact-form div:nth-child(3):before {
     content: '\f075';
     top: 0;
 }
