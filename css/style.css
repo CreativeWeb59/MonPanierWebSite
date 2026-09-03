@@ -638,7 +638,9 @@ li { margin-bottom: 8px; }
         transform: translate(0);
     }
 
-    .grd-ecran { display: none; }
+    .grd-ecran {
+        display: none;
+    }
 
     .pt-ecran {
         width: 100%;
@@ -981,7 +983,11 @@ li { margin-bottom: 8px; }
     }
 
     #gauche .carte {
-    height: 280px;
+    height: 320px;
+    }
+
+    #contain-id #intro p{
+        font-size: 1.2rem;
     }
     .vue-ecran, #menu-cote { display: none; }
 }
