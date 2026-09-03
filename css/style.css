@@ -1003,8 +1003,13 @@ li { margin-bottom: 8px; }
         text-align: center;
     }
 
-    .date .cercle {
+    #gauche .cercle {
         display: none;
     }
+
+    #gauche .carte::before {
+    display: none;
+}
+
     .vue-ecran, #menu-cote { display: none; }
 }
