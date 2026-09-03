@@ -982,8 +982,12 @@ li { margin-bottom: 8px; }
         font-size: 1rem;
     }
 
-    #gauche .carte {
-    height: 340px;
+    #gauche .cartePetite {
+    height: 200px;
+    }
+
+    .carteGrande {
+    height: 350px;
     }
 
     #contain-id #intro p{
