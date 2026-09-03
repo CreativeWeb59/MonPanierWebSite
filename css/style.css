@@ -980,5 +980,8 @@ li { margin-bottom: 8px; }
         font-size: 1rem;
     }
 
+    #gauche .carte {
+    height: 250px;
+    }
     .vue-ecran, #menu-cote { display: none; }
 }
