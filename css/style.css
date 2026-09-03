@@ -642,13 +642,7 @@ li { margin-bottom: 8px; }
         display: none;
     }
 
-    .pt-ecran {
-        width: 100%;
-        display: block;
-        padding: 10px;
-        text-align: center;
-        font-size: 1rem;
-    }
+
 
     h1 {
         display: block;
@@ -999,7 +993,14 @@ li { margin-bottom: 8px; }
     }
 
     #contain-id #intro p{
-        font-size: 1.2rem;
+        font-size: 0.8rem;
+    }
+
+    .pt-ecran {
+        width: 100%;
+        display: block;
+        padding: 10px;
+        text-align: center;
     }
 
     .date .cercle {
