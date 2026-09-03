@@ -16,9 +16,9 @@
 }
 
 body {
-    width: 99vw;
+    width: 100%;
+    overflow-x: hidden;
     font-size: 16px;
-    /*font-family: 'Merriweather', serif;*/
     font-family: 'Poppins', sans-serif;
 }
 
@@ -28,8 +28,7 @@ body {
     position: relative;
 }
 
-/* navbar */
-
+/* Navbar */
 #topnav_responsive_menu {
     width: 100%;
     margin: 10px auto;
@@ -60,60 +59,28 @@ a {
 }
 
 .nav.active {
-    /*position: fixed;
-    top: 10px;*/
-    /*left: 0;
-    right: 0;*/
     transition: all 0.6s ease-in-out;
     z-index: 999;
     margin: 0 auto;
 }
 
 .nav .active a {
-    color: #9c1010;
+    color: var(--color-red);
 }
 
 .nav a.current,
 .nav a:hover {
-    color: #1f1f1f;
+    color: var(--color-black);
     font-weight: bold;
 }
 
-/*.nav.active a{
-    color: #9c1010;
-}*/
-
-/* menu burger */
-/* ******************** NAV BAR ******************** */
 .topnav {
-    /*display: flex;
-    justify-content: space-evenly;
-    align-items: center;*/
     width: 100%;
     padding: 10px;
 }
 
 .topnav_link {
-    color: black;
-    padding: 12px;
-    text-decoration: none;
-}
-
-.topnav_link:hover {
-    color: #680386;
-}
-
-/* hide responsive menu */
-/* ******************** NAV BAR ******************** */
-/*.topnav {
-    background-color: #333;
-    display: flex;
-    align-items: center;
-    width: 100%;
-  }*/
-
-.topnav_link {
-    color: white;
+    color: #fff;
     padding: 12px;
     text-decoration: none;
 }
@@ -122,17 +89,11 @@ a {
     color: #0078b4;
 }
 
-/* hide responsive menu */
 #topnav_menu {
     display: none;
 }
 
-
-/* fin burger */
-
-
-/* nav de cote */
-/* menu de cote */
+/* Side Menu */
 #menu-cote {
     width: 200px;
     height: 60vh;
@@ -163,14 +124,12 @@ a {
     padding-top: 28px;
 }
 
-#menu-cote ul li a {}
-
+/* Layout Elements */
 header {
     width: 100%;
     border-radius: 50px;
     box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
 }
-
 
 section {
     width: 100%;
@@ -184,15 +143,7 @@ section {
     display: flex;
 }
 
-#xp {
-    margin-bottom: 20px;
-}
-
-#form {
-    margin-bottom: 40px;
-}
-
-#contactLink {
+#xp, #form, #contactLink {
     margin-bottom: 40px;
 }
 
@@ -223,7 +174,23 @@ section {
     position: relative;
 }
 
+#contain-id #photo-accueil {
+    display: block;
+    width: 20%;
+    position: relative;
+}
+
+
 #photo img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: auto;
+}
+
+#photo-accueil img {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -234,7 +201,6 @@ section {
 
 h1 {
     display: block;
-    /*    background-color: var(--color-blue);*/
     background: linear-gradient(to bottom right, var(--color-purple1), var(--color-purple2));
     width: 100%;
     height: 100px;
@@ -246,17 +212,12 @@ h1 {
     color: #fff;
 }
 
-h2 {
-    font-size: 1.5rem;
-}
-
-h5 {
+h2 { font-size: 1.5rem; }
+h5 { 
     display: none;
-}
-
-p {
-    font-size: 1rem;
-}
+ }
+ 
+p { font-size: 1rem; }
 
 section #gauche {
     width: 70%;
@@ -272,7 +233,6 @@ section #droite {
 
 #gauche h2 {
     display: block;
-    background-color: var(--color-purple1);
     background: linear-gradient(to bottom right, var(--color-purple1), var(--color-purple2));
     color: #fff;
     width: 100%;
@@ -284,31 +244,23 @@ section #droite {
     margin-bottom: 20px;
 }
 
-#gauche h3 {
-    font-size: 1.6rem;
-}
+#gauche h3 { font-size: 1.6rem; }
 
 #gauche p {
-    color: #1f1f1f;
+    color: var(--color-black);
     margin-top: 10px;
 }
 
 #gauche .liste {
     width: 100%;
-    /*height: 240px;*/
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
 }
 
-.h-240 {
-    height: 240px;
-}
-
-.h-300 {
-    height: 320px;
-}
+.h-240 { height: 240px; }
+.h-300 { height: 320px; }
 
 #gauche .date {
     width: 14%;
@@ -336,7 +288,6 @@ section #droite {
     background-color: #fff;
     width: 80%;
     height: 80%;
-    /*border: 1px solid #680404;*/
     padding: 20px;
     position: relative;
     box-shadow: 2px 2px 6px #bebebe, -2px -2px 6px #ffffff;
@@ -356,7 +307,7 @@ section #droite {
 
 #droite h2 {
     color: #fff;
-    text-shadow: 2px 2px 0 var(--color-black), 2px -2px 0 var(--color-black), -2px 2px 0 var(--color-black), -2px -2px 0 var(--color-black), 2px 0px 0 var(--color-black), 0px 2px 0 var(--color-black), -2px 0px 0 var(--color-black), 0px -2px 0 var(--color-black);
+    text-shadow: 2px 2px 0 var(--color-black), 2px -2px 0 var(--color-black), -2px 2px 0 var(--color-black), -2px -2px 0 var(--color-black);
     display: block;
     width: 100%;
     height: 80px;
@@ -391,22 +342,16 @@ section #droite {
     left: -26px;
 }
 
-/* portofolio */
-#portofolio {
-    margin-bottom: 40px;
-}
-
-#portofolio-section {
-    width: 100%;
-}
+/* Portfolio Section */
+#portofolio { margin-bottom: 40px; }
+#portofolio-section { width: 100%; }
 
 #portofolio-section h2 {
     width: 100%;
     height: 80px;
     text-align: center;
-    margin: 30px 0 30px 0;
+    margin: 30px 0;
     display: block;
-    background-color: var(--color-purple1);
     background: linear-gradient(to bottom right, var(--color-purple1), var(--color-purple2));
     color: #fff;
     font-size: 2rem;
@@ -416,7 +361,7 @@ section #droite {
 
 .container-portofolio {
     width: 100%;
-    height: 2000px;
+    min-height: 1000px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -424,14 +369,12 @@ section #droite {
 
 .card {
     position: relative;
-    /*margin: 20px 0;*/
     width: 30%;
     height: 500px;
     background: #fff;
     transform-style: preserve-3d;
     transform: perspective(2000px);
-    transition: 1x;
-    /*box-shadow: inset 300px 0 50px rgba(0, 0, 0, .5); */
+    transition: 1s;
     box-shadow: inset 10px 0 20px var(--color-purple1);
     border: 1px solid var(--color-purple1);
 }
@@ -439,7 +382,6 @@ section #droite {
 .card:hover {
     z-index: 1000;
     transform: perspective(2000px) rotate(-10deg);
-    /*box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5);*/
     box-shadow: inset 10px 0 20px var(--color-purple1);
 }
 
@@ -477,12 +419,13 @@ section #droite {
     margin: 10px 0;
 }
 
-
-/* section contact */
+/* Contact Section */
+#contact {
+    height: 90vh;
+}
 
 #contact h2 {
     display: block;
-    background-color: var(--color-purple1);
     background: linear-gradient(to bottom right, var(--color-purple1), var(--color-purple2));
     color: #fff;
     width: 100%;
@@ -493,10 +436,6 @@ section #droite {
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 20px;
-}
-
-#contact {
-    height: 90vh;
 }
 
 .contain-tout {
@@ -528,38 +467,9 @@ section #droite {
     position: relative;
 }
 
-#contact-form div::before {
-    font-family: FontAwesome;
-    z-index: 2;
-    width: 20px;
-    color: #cccccc;
-    text-align: left;
-    position: absolute;
-    left: 0;
-    top: 10px;
-}
-
-#contact-form div:nth-child(1):before {
-    content: '\f007';
-}
-
-#contact-form div:nth-child(2):before {
-    content: '\f0e0';
-}
-
-#contact-form div:nth-child(3) {
-    height: 100px;
-}
-
-#contact-form div:nth-child(3):before {
-    content: '\f075';
-    top: 0;
-}
-
-input,
-textarea {
+input, textarea {
     width: 70%;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     border: 0;
     border-bottom: 2px solid #dddddd;
     background-color: transparent;
@@ -575,64 +485,41 @@ label {
     z-index: 999;
 }
 
-#message {
-    position: absolute;
-}
+#message { position: absolute; }
+input { height: 40px; }
 
-input {
-    height: 40px;
-}
-
-input:focus,
-textarea:focus {
+input:focus, textarea:focus {
     border-bottom: 2px solid #01109b;
     outline: none;
 }
 
-
-/* Voici les règles de mise en forme pour les champs invalides */
 input.invalid {
     border-color: #900;
     background-color: #FDD;
 }
 
-input:focus.invalid {
-    outline: none;
-}
-
-/* Voici les règles utilisées pour les messages d'erreur */
 .error {
     width: 100%;
     padding: 0;
-
     font-size: 80%;
     color: white;
     background-color: #900;
     border-radius: 0 0 5px 5px;
-
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-.error.active {
-    padding: 0.3em;
-}
-
-/* fin traitement des erreurs*/
+.error.active { padding: 0.3em; }
 
 textarea {
     height: 100px;
     resize: none;
 }
 
-::placeholder {
-    font-style: italic;
-}
+::placeholder { font-style: italic; }
 
 .btn {
     width: 100%;
     height: 50px;
-    padding: 0;
     background: var(--color-purple1);
     color: #fff;
     border: 1px solid #dddddd;
@@ -648,7 +535,6 @@ textarea {
     cursor: pointer;
 }
 
-/* Cadre pour message d'envoi */
 #result-form {
     width: 80%;
     min-height: 30px;
@@ -671,13 +557,10 @@ textarea {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
-    height: auto;
     width: 80%;
     height: auto;
 }
 
-/* footer */
 footer {
     width: 100%;
     height: 80px;
@@ -685,45 +568,48 @@ footer {
     margin-top: 150px;
 }
 
-/* affiche en mode ecran */
-.vue-ecran {
-    display: inline-block;
+.vue-ecran { display: inline-block; }
+h4 { display: none; }
+
+ul { padding-left: 20px; }
+li { margin-bottom: 8px; }
+
+#droite .liste > div {
+    height: 300px;
+    margin: 80px 0 80px 20px;
 }
 
-/* Responsive */
-
-h4 {
-    display: none;
+.imgAppli {
+    width: 200px;
+    height: 200px;
 }
 
+.imgAppli img {
+    width: 200px;
+    height: auto;
+}
+
+/* Media Queries */
 @media only screen and (max-width: 1024px) {
-    body {
-        width: 100vw;
-    }
+    body { width: 100%; }
 
     .container {
         width: 100%;
-        /*margin: 10px auto;*/
         position: static;
     }
 
-    /* header */
-    header {
+    header, section {
         border-radius: 0;
         box-shadow: none;
     }
 
     section {
-        border-radius: 0;
         margin-top: 10px;
         padding: 10px;
-        box-shadow: none;
         display: block;
     }
 
-    #section {
-        display: block;
-    }
+    #section { display: block; }
 
     #contain-id {
         width: 100%;
@@ -742,7 +628,6 @@ h4 {
     #contain-id #photo {
         width: 38%;
         position: static;
-        padding: 10px auto;
         margin: 60px 0 0 0;
     }
 
@@ -753,9 +638,7 @@ h4 {
         transform: translate(0);
     }
 
-    .grd-ecran {
-        display: none;
-    }
+    .grd-ecran { display: none; }
 
     .pt-ecran {
         width: 100%;
@@ -777,11 +660,7 @@ h4 {
         border-radius: 0;
     }
 
-    /* section */
-    #xp {
-        display: block;
-        /*min-height: 150vh;*/
-    }
+    #xp { display: block; }
 
     section #gauche {
         width: 100%;
@@ -802,30 +681,12 @@ h4 {
         text-align: center;
     }
 
-    .h-240 {
-        height: 300px;
-    }
+    .h-240 { height: 300px; }
+    .h-300 { height: 500px; }
 
-    .h-300 {
-        height: 500px;
-    }
-
-    #gauche p {
-        font-size: 0.9rem;
-    }
-
-    /* bordure de cote */
-    #gauche .date {
-        font-size: 0.9rem;
-    }
-
-    #gauche .cercle {
-        width: 40px;
-    }
-
-    .cercle svg {
-        width: 10px;
-    }
+    #gauche p, #gauche .date { font-size: 0.9rem; }
+    #gauche .cercle { width: 40px; }
+    .cercle svg { width: 10px; }
 
     #gauche .carte::before {
         border-top: 10px solid transparent;
@@ -835,7 +696,6 @@ h4 {
         left: -8px;
     }
 
-    /* cote droit qui passe en bas */
     section #droite {
         width: 100%;
         padding: 20px;
@@ -852,27 +712,14 @@ h4 {
         text-align: center;
     }
 
-    /* portofolio */
     #portofolio {
         width: 100%;
         padding: 0;
     }
 
-    /* #portofolio h2 {
-        width: 100%;
-        height: 70px;
-        text-align: center;
-        font-size: 1.6rem;
-        margin: 0 0 20px 0;
-        padding: 16px;
-        border-radius: 0;
-        margin: 0;
-    } */
-
-    /* carte */
     .container-portofolio {
         width: 100%;
-        height: 950vh;
+        height: auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -880,12 +727,11 @@ h4 {
 
     .card {
         position: static;
-        /*margin: 20px 0;*/
         width: 90%;
-        height: 92vh;
+        height: auto;
         transform-style: unset;
         transform: unset;
-        transition: 0;
+        transition: none;
         box-shadow: none;
         border: 1px solid var(--color-purple1);
         margin: 40px 0;
@@ -906,9 +752,7 @@ h4 {
         transition: none;
     }
 
-    .card:hover .imgBox {
-        transform: rotateY(0);
-    }
+    .card:hover .imgBox { transform: rotateY(0); }
 
     .card .imgBox img {
         position: static;
@@ -927,23 +771,16 @@ h4 {
         font-size: 1.2rem;
     }
 
-    .card .details p {
+    .card .details p, .card .details a {
         font-size: 0.9rem;
     }
 
-    .card .details a {
-        font-size: 0.9rem;
-    }
-
-    /* menu burguer */
-    /* hide classic menu */
     #topnav_menu {
         width: 100%;
         display: flex;
         align-items: center;
     }
 
-    /* position home link at left and hamburger will be positionned at right */
     .topnav {
         width: 100%;
         display: flex;
@@ -957,11 +794,8 @@ h4 {
         background-color: #0078b4;
     }
 
-    #home_link {
-        flex-grow: 1;
-    }
+    #home_link { flex-grow: 1; }
 
-    /* position responsive menu at the right of the screen */
     #topnav_responsive_menu ul {
         display: block;
         flex-direction: column;
@@ -983,14 +817,6 @@ h4 {
         text-align: center;
     }
 
-    /* disable horizontal scrolling  */
-    /* anciennement root
-    #home {
-        position: relative;
-        overflow-x: hidden;
-    }
-
-    /* position responsive menu at the right of the screen */
     #topnav_responsive_menu {
         display: block;
         position: absolute;
@@ -1006,14 +832,11 @@ h4 {
         background-color: #fff;
     }
 
-    /* and let's slide it in from the right */
     #topnav_responsive_menu.open {
         transform: none;
         position: fixed;
     }
 
-    /* icone */
-    /* define size and position of the hamburger link */
     #contain-ico {
         width: 100%;
         height: 70px;
@@ -1024,20 +847,16 @@ h4 {
     #topnav_hamburger_icon {
         top: 20px;
         left: 20px;
-        /*margin: 16px;*/
         width: 33px;
         height: 28px;
         z-index: 100;
-        /*user-select: none;*/
         display: block;
         cursor: pointer;
         padding-left: 20px;
         position: absolute;
     }
 
-    /* define the style (size, color, position, animation, ...) of the 3 spans */
     #topnav_hamburger_icon span {
-        /*display: block;*/
         position: absolute;
         height: 4px;
         width: 33px;
@@ -1051,9 +870,8 @@ h4 {
         transition: .25s ease-in-out;
     }
 
-    /* set the 3 spans position to look like a hamburger */
     #topnav_hamburger_icon span:nth-child(1) {
-        top: 0px;
+        top: 0;
         transform-origin: left top;
     }
 
@@ -1067,60 +885,35 @@ h4 {
         transform-origin: left bottom;
     }
 
-    /* the first span rotates 45° \ */
     #topnav_hamburger_icon.open span:nth-child(1) {
         width: 36px;
         transform: rotate(45deg);
     }
 
-    /* the second span disappears */
     #topnav_hamburger_icon.open span:nth-child(2) {
         width: 0%;
         opacity: 0;
     }
 
-    /* the last span rotates -45° / */
     #topnav_hamburger_icon.open span:nth-child(3) {
         width: 36px;
         transform: rotate(-45deg);
     }
 
-    .container {
-        z-index: -1;
-    }
+    .container { z-index: -1; }
 
-    /*champs formulaire contact */
-    /* .contain-tout {
-    } */
+    #contact h2 { margin-bottom: 0; }
+    .form-container { width: 100%; }
+    .form-image { display: none; }
 
-    #contact h2 {
-        margin-bottom: 0;
-    }
-
-    .form-container {
-        width: 100%;
-    }
-
-    .form-image {
-        display: none;
-    }
-
-
-
-    input,
-    textarea {
+    input, textarea {
         width: 80%;
-        padding: 10px 10px 10px 10px;
-        border: unset;
+        padding: 10px;
         margin-left: 30px;
-        /* border-bottom: 2px solid #dddddd; */
-        /* background-color: transparent; */
         border: 1px solid var(--color-purple1);
     }
 
-    #message {
-        position: static;
-    }
+    #message { position: static; }
 
     label {
         display: inline-block;
@@ -1131,12 +924,7 @@ h4 {
         margin-left: 30px;
     }
 
-    input:focus,
-    textarea:focus {
-        outline: unset;
-    }
-
-    input:focus.invalid {
+    input:focus, textarea:focus, input:focus.invalid {
         outline: unset;
     }
 
@@ -1145,32 +933,14 @@ h4 {
         margin-left: 30px;
     }
 
-    .btn {
-        transition: none;
-    }
+    .btn { transition: none; }
 
+    #home { margin-bottom: -20px; }
+    #form { margin-bottom: 60px; }
+    #portofolio { margin-bottom: 40px; }
+    #contactLink { margin-bottom: 20px; }
 
-    /* decallages hauteur redirection des liens */
-    #home {
-        margin-bottom: -20px;
-    }
-
-    #form {
-        margin-bottom: 60px;
-    }
-
-    #portofolio {
-        margin-bottom: 40px;
-    }
-
-    #contactLink {
-        margin-bottom: 20px;
-    }
-
-
-    /* communs */
-    #portofolio-section h2,
-    #contact h2 {
+    #portofolio-section h2, #contact h2 {
         border-radius: 0;
         height: 60px;
         font-size: 1.5rem;
@@ -1186,11 +956,10 @@ h4 {
     h5 {
         display: block;
         text-align: center;
-        margin-top: 20px;
+        margin-top: 60px;
         font-size: 1.2rem;
     }
 
-    /* Titre de fin de page dans le footer */
     h4 {
         display: block;
         text-align: center;
@@ -1200,41 +969,16 @@ h4 {
         font-weight: 400;
     }
 
-    /* rends invible en mode telephone */
-    .vue-ecran {
+    #contain-id #photo-accueil {
         display: none;
     }
 
-    /* menu de cote */
-    #menu-cote {
-        display: none;
+    #h1 {
+        font-size: 1rem;
     }
+    #gauche h2 {
+        font-size: 1rem;
+    }
+
+    .vue-ecran, #menu-cote { display: none; }
 }
-
-ul {
-        padding-left: 20px;
-    }
-
-    li {
-        margin-bottom: 8px;
-    }
-
-    #droite .liste > div {
-    /* position: relative; */
-    height: 300px;
-    margin: 80px 0;
-    margin-left: 20px;
-}
-
-    .imgAppli {
-        width: 200px;
-        height: 200px;
-        /* position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%); */
-    }
-    .imgAppli img{
-        width: 200px;
-        height: auto;
-    }
