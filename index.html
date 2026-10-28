@@ -1,21 +1,76 @@
 <!DOCTYPE html>
 <html lang="fr">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Présentation de l'application PaniScan</title>
+
+    <!-- Titre et référencement naturel -->
+    <title>PaniScan : application de liste de courses et suivi du budget</title>
+
+    <meta name="description"
+        content="Découvrez PaniScan, l'application pour gérer vos courses, scanner les codes-barres, suivre le total de votre panier en temps réel et analyser vos dépenses alimentaires.">
+
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Delphine Maurer">
+    <meta name="theme-color" content="#5E8C61">
+
+    <!-- URL officielle de la page -->
+    <link rel="canonical" href="https://creativeweb59.github.io/MonPanierWebSite/">
+
+    <!-- Réseaux sociaux : aperçu du lien partagé -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:site_name" content="PaniScan">
+    <meta property="og:title" content="PaniScan : gérez vos courses et votre budget">
+    <meta property="og:description"
+        content="Scannez vos produits, créez vos tickets de courses et suivez vos dépenses alimentaires grâce à PaniScan.">
+    <meta property="og:url" content="https://creativeweb59.github.io/MonPanierWebSite/">
+    <meta property="og:image" content="https://creativeweb59.github.io/MonPanierWebSite/images/PaniScanIconT.png">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="PaniScan : application de gestion des courses">
+    <meta name="twitter:description"
+        content="Gérez vos tickets, scannez vos produits et suivez le montant de votre panier en temps réel.">
+    <meta name="twitter:image" content="https://creativeweb59.github.io/MonPanierWebSite/images/PaniScanIconT.png">
+
+    <!-- Icône du site -->
+    <link rel="icon" type="image/png" href="images/PaniScanIconT.png">
+
+    <!-- Feuille de style -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/097058085d.js" crossorigin="anonymous"></script>
-    <!-- Email js -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
+
+    <!-- EmailJS : conservation de ton fonctionnement actuel -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
         (function () {
-            // https://dashboard.emailjs.com/admin/account
             emailjs.init('user_GFMolg3cDxBDK2tm0jGUw');
         })();
     </script>
+
+    <!-- Données structurées : application mobile -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "PaniScan",
+      "description": "Application de gestion des courses permettant de scanner des codes-barres, de créer des tickets et de suivre les dépenses alimentaires.",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Android, iOS",
+      "inLanguage": "fr",
+      "author": {
+        "@type": "Person",
+        "name": "Delphine Maurer"
+      }
+    }
+    </script>
 </head>
+
 
 <body id="home">
     <nav class="nav" id="menu-cote">
@@ -47,22 +102,46 @@
     <div class="container">
         <header>
             <div id="contain-id">
-                <div id="photo"><img src="images/PaniScanIconT.png" alt=""></div>
+                <div id="photo"><img src="images/PaniScanIconT.png" alt="Logo de l'application PaniScan"></div>
                 <div id="intro">
                     <p>PaniScan</p>
-                    <p class="pt-ecran">Gérez vos courses facilement.<br>
-                    Suivez votre panier en temps réel.
+                    <p class="pt-ecran">
+                        Gérez votre liste de courses facilement.<br>
+                        Scannez vos produits et suivez le total de votre panier
+                        en temps réel.
                     </p>
-                        
+
                 </div>
-                    <div id="photo-accueil"><img src="images/screenAccueilPaniScan.PNG" alt=""></div>
+                <div id="photo-accueil"><img src="images/screenAccueilPaniScan.PNG"
+                        alt="Accueil de PaniScan avec le suivi du panier de courses"></div>
             </div>
-            <h1>PaniScan</h1>
+            <h1>PaniScan : l'application pour gérer vos courses et votre budget</h1>
         </header>
+
+        <section id="presentation-seo">
+            <h2>Une application pour mieux gérer vos courses</h2>
+            <br />
+            <p>
+                PaniScan vous aide à organiser vos achats alimentaires,
+                à retrouver vos produits et à suivre le montant de vos courses.
+                Scannez les codes-barres, créez vos tickets, enregistrez
+                vos magasins et consultez vos statistiques pour mieux
+                comprendre vos dépenses.
+            </p>
+            <br />
+            <p>
+                Que vous souhaitiez mieux suivre votre budget courses,
+                connaître le total de votre panier ou conserver l'historique
+                de vos achats, PaniScan regroupe ces fonctionnalités
+                dans une application simple à utiliser.
+            </p>
+            <br />
+        </section>
+
         <div id="xp"></div>
         <section class="decallage-lien" id="section">
             <div id="gauche">
-                <h2>Les produits et magasins</h2>
+                <h2>Gérer ses produits et magasins</h2>
                 <div class="liste h-240">
                     <div class="date"></div>
                     <div class="cercle">
@@ -72,7 +151,9 @@
                     </div>
                     <div class="carte carteGrande">
                         <h3>Ajouter des produits</h3>
-                        <p>Scanner le code-barres d'un produit pour l'ajouter à l'application et récupérer automatiquement ses données depuis Open Food Facts, une base de données collaborative (nécessite une connexion Internet).<br></p>
+                        <p>Scanner le code-barres d'un produit pour l'ajouter à l'application et récupérer
+                            automatiquement ses données depuis Open Food Facts, une base de données collaborative
+                            (nécessite une connexion Internet).<br></p>
                     </div>
                 </div>
                 <div class="liste h-240">
@@ -110,12 +191,13 @@
                     </div>
                     <div class="carte cartePetite">
                         <h3>Ajouter des magasins</h3>
-                        <p>Possibilité d'ajouter des magasins en personnalisant leur nom, leur ville et leur note. Vous pourrez ensuite les associer à vos tickets et consulter les statistiques.</p>
+                        <p>Possibilité d'ajouter des magasins en personnalisant leur nom, leur ville et leur note. Vous
+                            pourrez ensuite les associer à vos tickets et consulter les statistiques.</p>
                     </div>
                 </div>
                 <!-- Début ajout des produits -->
                 <div id="form"></div>
-                <h2 id="form" class="decallage-lien">Les tickets</h2>
+                <h2 id="tickets" class="decallage-lien">Les tickets</h2>
                 <div class="liste h-300">
                     <div class="date"></div>
                     <div class="cercle">
@@ -142,7 +224,8 @@
                     <div class="carte cartePetite">
                         <h3>Visualiser les tickets</h3>
                         <p>Les tickets restent accessibles pendant 30 jours après leur validation.</p>
-                        <p>Si la liste est trop longue, vous pouvez archiver volontairement un ticket et lui redonner ultérieurement l'état « validé ».</p>
+                        <p>Si la liste est trop longue, vous pouvez archiver volontairement un ticket et lui redonner
+                            ultérieurement l'état « validé ».</p>
                     </div>
                 </div>
                 <div class="liste h-300">
@@ -162,7 +245,7 @@
                 </div>
 
 
-                <h2>Les statistiques</h2>
+                <h2>Suivre ses dépenses et son budget courses</h2>
                 <div class="liste h-240">
                     <div class="date"></div>
                     <div class="cercle">
@@ -172,7 +255,8 @@
                     </div>
                     <div class="carte cartePetite">
                         <h3>Différentes statistiques</h3>
-                        <p>Informations sur les dépenses, les produits les plus achetés et les magasins les plus fréquentés</p>
+                        <p>Informations sur les dépenses, les produits les plus achetés et les magasins les plus
+                            fréquentés</p>
                     </div>
                 </div>
 
@@ -186,19 +270,21 @@
 
                     <div>
                         <div class="imgAppli">
-                            <img src="images/nouveauProduit.PNG" alt="">
+                            <img src="images/nouveauProduit.PNG"
+                                alt="Ajout d'un produit par scan de code-barres dans PaniScan">
                         </div>
                     </div>
 
                     <div>
                         <div class="imgAppli">
-                            <img src="images/produitGenerique.png" alt="">
+                            <img src="images/produitGenerique.png"
+                                alt="Sélection de produits génériques pour les courses">
                         </div>
                     </div>
 
                     <div>
                         <div class="imgAppli">
-                            <img src="images/magasins.PNG" alt="">
+                            <img src="images/magasins.PNG" alt="Gestion des magasins dans l'application PaniScan">
                         </div>
                     </div>
 
@@ -206,25 +292,26 @@
 
                     <div>
                         <div class="imgAppli">
-                            <img src="images/mesTickets.PNG" alt="">
+                            <img src="images/mesTickets.PNG"
+                                alt="Création d'un ticket de courses avec le total du panier">
                         </div>
                     </div>
 
                     <div>
                         <div class="imgAppli">
-                            <img src="images/listeTickets.PNG" alt="">
+                            <img src="images/listeTickets.PNG" alt="Historique des tickets de courses dans PaniScan">
                         </div>
                     </div>
 
                     <div>
                         <div class="imgAppli">
-                            <img src="images/lesStats.PNG" alt="">
+                            <img src="images/lesStats.PNG" alt="Statistiques des dépenses alimentaires">
                         </div>
                     </div>
 
                     <div>
                         <div class="imgAppli">
-                            <img src="images/statistique.PNG" alt="">
+                            <img src="images/statistique.PNG" alt="Analyse des dépenses et des achats par magasin">
                         </div>
                     </div>
                 </div>
@@ -258,40 +345,39 @@
                 <br>
             </div>
         </section>
-    <div id="contactLink"></div>
-    <section id="contact">
-        <h2>CONTACT</h2>
-        <div id="result-form"></div>
-        <div class="contain-tout">
-            <div class="form-container">
-                <form method="post" id="contact-form">
-                    <div>
-                        <label for="nom">Nom : *</label>
-                        <input type="text" name="nom" id="nom" required minlength="3" maxlength="20">
-                        <span class="error"></span>
-                    </div>
-                    <div>
-                        <label for="email">Adresse email : *</label>
-                        <input type="email" name="email" id="email" minlength="6" maxlength="50">
-                        <span class="error"></span>
-                    </div>
-                    <div>
-                        <label for="message">Message : *</label>
-                        <textarea name="message" id="message" required minlength="10"
-                            maxlength="250"></textarea>
-                        <span class="error"></span>
-                    </div>
-                    <div>
-                        <input class="btn" id="submit" type="submit" value="Envoyer">
-                    </div>
-                </form>
+        <div id="contactLink"></div>
+        <section id="contact">
+            <h2>CONTACT</h2>
+            <div id="result-form"></div>
+            <div class="contain-tout">
+                <div class="form-container">
+                    <form method="post" id="contact-form">
+                        <div>
+                            <label for="nom">Nom : *</label>
+                            <input type="text" name="nom" id="nom" required minlength="3" maxlength="20">
+                            <span class="error"></span>
+                        </div>
+                        <div>
+                            <label for="email">Adresse email : *</label>
+                            <input type="email" name="email" id="email" minlength="6" maxlength="50">
+                            <span class="error"></span>
+                        </div>
+                        <div>
+                            <label for="message">Message : *</label>
+                            <textarea name="message" id="message" required minlength="10" maxlength="250"></textarea>
+                            <span class="error"></span>
+                        </div>
+                        <div>
+                            <input class="btn" id="submit" type="submit" value="Envoyer">
+                        </div>
+                    </form>
+                </div>
+                <div class="form-image">
+                    <img src="images/iphone.jpg" alt="image contact">
+                </div>
             </div>
-            <div class="form-image">
-                <img src="images/iphone.jpg" alt="image contact">
-            </div>
-        </div>
 
-    </section>
+        </section>
 
     </div>
     <footer>

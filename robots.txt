@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://creativeweb59.github.io/MonPanierWebSite/sitemap.xml
